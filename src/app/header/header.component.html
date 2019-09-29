@@ -1,0 +1,38 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" [routerLink]="''">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="'aboutus'">About us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="'contact'">Contact</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Yearly events
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" [routerLink]="'contact'">Ismerkedés a régi mesterségekkel</a>
+            <a class="dropdown-item" [routerLink]="'contact'">Kötélfonó napok a Régi Mesterségek Házában</a>
+            <a class="dropdown-item" [routerLink]="'contact'">XIX. század végén és a XX. század elején élt zentai mesterek életének és munkásságának bemutatása</a>
+          </div>
+        </li>
+      </ul>
+      
+    </div>
+    <li class="navbar-brand navbar-right">
+        <input type="image" src="/assets/images/flag-eng.png" (click)="translate.use('en')" class="btn" />
+      </li>
+      <li class="navbar-brand navbar-right">
+        <input type="image" src="/assets/images/flag-hun.png" (click)="translate.use('hu')" class="btn" />
+      </li>
+      <li class="navbar-brand navbar-right">
+        <input type="image" src="/assets/images/flag-srb.png" (click)="translate.use('sr')" class="btn" />
+      </li>
+  </nav>
