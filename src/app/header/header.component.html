@@ -3,24 +3,25 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <img class="logo" src="/assets/images/rmhz-logo.png"/>
       <ul class="navbar-nav">
         <li class="nav-item active">
-          <a class="nav-link" [routerLink]="''">Home <span class="sr-only">(current)</span></a>
+          <a class="nav-link" [routerLink]="''">{{ 'HOME.HOME' | translate }} <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" [routerLink]="'aboutus'">About us</a>
+          <a class="nav-link" [routerLink]="'aboutus'">{{ 'ABOUTUS.ABOUTUS' | translate }}</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" [routerLink]="'contact'">Contact</a>
+          <a class="nav-link" [routerLink]="'contact'">{{ 'CONTACT.CONTACT' | translate }}</a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Yearly events
+              {{ 'EVENTS.YEARLYEVENTS' | translate }}
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <a class="disabled dropdown-item" [routerLink]="'contact'">Ismerkedés a régi mesterségekkel</a>
-            <a class="disabled dropdown-item" [routerLink]="'contact'">Kötélfonó napok a Régi Mesterségek Házában</a>
-            <a class="disabled dropdown-item" [routerLink]="'contact'">XIX. század végén és a XX. század elején élt zentai mesterek életének és munkásságának bemutatása</a>
+            <a class="disabled dropdown-item" [routerLink]="'contact'">{{ 'EVENTS.EVENT1' | translate }}</a>
+            <a class="disabled dropdown-item" [routerLink]="'contact'">{{ 'EVENTS.EVENT2' | translate }}</a>
+            <a class="disabled dropdown-item" [routerLink]="'contact'">{{ 'EVENTS.EVENT3' | translate }}</a>
           </div>
         </li>
       </ul>
