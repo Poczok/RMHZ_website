@@ -1,3 +1,13 @@
 .logo {
   max-width: 130px;
 }
+.language-box {
+  width:300px; overflow:hidden;
+}
+.language-image { 
+  float: left; 
+  margin: 1em;
+}
+.language-image .img.middle {
+  margin:15px 90px;
+}

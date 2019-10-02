@@ -11,7 +11,7 @@
         <li class="nav-item active d-block d-lg-none" data-toggle="collapse" data-target=".navbar-collapse">
           <a class="nav-link" [routerLink]="''">{{ 'HOME.HOME' | translate }} <span class="sr-only">(current)</span></a>
         </li>
-        <li class="nav-item d-none d-lg-none" data-toggle="collapse" data-target=".navbar-collapse">
+        <li class="nav-item d-none d-lg-block">
           <a class="nav-link" [routerLink]="'aboutus'">{{ 'ABOUTUS.ABOUTUS' | translate }}</a>
         </li>
         <li class="nav-item d-block d-lg-none" data-toggle="collapse" data-target=".navbar-collapse" data-toggle="collapse" data-target=".navbar-collapse">
@@ -33,15 +33,20 @@
             <a class="disabled dropdown-item" [routerLink]="'contact'">{{ 'EVENTS.EVENT3' | translate }}</a>
           </div>
         </li>
+        <div class="language-box">
+          <a (click)="translate.use('en')"><img class="language-image nav-item d-block d-lg-none" src="/assets/images/flag-eng.png" alt="EN"></a>
+          <a (click)="translate.use('hu')"><img class="language-image nav-item d-block d-lg-none" src="/assets/images/flag-hun.png" alt="HU"></a>
+          <a (click)="translate.use('sr')"><img class="language-image nav-item d-block d-lg-none" src="/assets/images/flag-srb.png" alt="SR"></a>
+        </div>
       </ul>
-      <li class="navbar-brand navbar-right">
-          <input type="image" src="/assets/images/flag-eng.png" (click)="translate.use('en')" class="btn" />
-        </li>
-        <li class="navbar-brand navbar-right">
-          <input type="image" src="/assets/images/flag-hun.png" (click)="translate.use('hu')" class="btn" />
-        </li>
-        <li class="navbar-brand navbar-right">
-          <input type="image" src="/assets/images/flag-srb.png" (click)="translate.use('sr')" class="btn" />
-        </li>
     </div>
+    <li class="nav-item active d-none d-lg-block">
+      <input type="image" src="/assets/images/flag-eng.png" (click)="translate.use('en')" class="btn" />
+    </li>
+    <li class="nav-item active d-none d-lg-block">
+      <input type="image" src="/assets/images/flag-hun.png" (click)="translate.use('hu')" class="btn" />
+    </li>
+    <li class="nav-item active d-none d-lg-block">
+      <input type="image" src="/assets/images/flag-srb.png" (click)="translate.use('sr')" class="btn" />
+    </li>
   </nav>
