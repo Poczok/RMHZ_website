@@ -1,52 +1,13 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <img class="logo" src="/assets/images/rmhz-logo.png"/>
-    <div class="collapse navbar-collapse" id="navbarNavDropdown" data-toggle="collapse">
-      <ul class="navbar-nav">
-        <li class="nav-item active d-none d-lg-block">
-          <a class="nav-link" [routerLink]="''">{{ 'HOME.HOME' | translate }} <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item active d-block d-lg-none" data-toggle="collapse" data-target=".navbar-collapse">
-          <a class="nav-link" [routerLink]="''">{{ 'HOME.HOME' | translate }} <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item d-none d-lg-block">
-          <a class="nav-link" [routerLink]="'aboutus'">{{ 'ABOUTUS.ABOUTUS' | translate }}</a>
-        </li>
-        <li class="nav-item d-block d-lg-none" data-toggle="collapse" data-target=".navbar-collapse" data-toggle="collapse" data-target=".navbar-collapse">
-          <a class="nav-link" [routerLink]="'aboutus'">{{ 'ABOUTUS.ABOUTUS' | translate }}</a>
-        </li>
-        <li class="nav-item d-none d-lg-block">
-          <a class="nav-link" [routerLink]="'contact'" >{{ 'CONTACT.CONTACT' | translate }}</a>
-        </li>
-        <li class="nav-item  d-block d-lg-none" data-toggle="collapse" data-target=".navbar-collapse" data-toggle="collapse" data-target=".navbar-collapse">
-            <a class="nav-link" [routerLink]="'contact'" >{{ 'CONTACT.CONTACT' | translate }}</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              {{ 'EVENTS.YEARLYEVENTS' | translate }}
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <a class="disabled dropdown-item" [routerLink]="'contact'">{{ 'EVENTS.EVENT1' | translate }}</a>
-            <a class="disabled dropdown-item" [routerLink]="'contact'">{{ 'EVENTS.EVENT2' | translate }}</a>
-            <a class="disabled dropdown-item" [routerLink]="'contact'">{{ 'EVENTS.EVENT3' | translate }}</a>
-          </div>
-        </li>
-        <div class="language-box">
-          <a (click)="translate.use('en')"><img class="language-image nav-item d-block d-lg-none" src="/assets/images/flag-eng.png" alt="EN"></a>
-          <a (click)="translate.use('hu')"><img class="language-image nav-item d-block d-lg-none" src="/assets/images/flag-hun.png" alt="HU"></a>
-          <a (click)="translate.use('sr')"><img class="language-image nav-item d-block d-lg-none" src="/assets/images/flag-srb.png" alt="SR"></a>
-        </div>
-      </ul>
-    </div>
-    <li class="nav-item active d-none d-lg-block">
-      <input type="image" src="/assets/images/flag-eng.png" (click)="translate.use('en')" class="btn" />
-    </li>
-    <li class="nav-item active d-none d-lg-block">
-      <input type="image" src="/assets/images/flag-hun.png" (click)="translate.use('hu')" class="btn" />
-    </li>
-    <li class="nav-item active d-none d-lg-block">
-      <input type="image" src="/assets/images/flag-srb.png" (click)="translate.use('sr')" class="btn" />
-    </li>
-  </nav>
+<ul id="nav" class="sidenav">
+  <li><a [routerLink]="''" [ngClass]="{'active': selectedItem == '/'}" (click)="listClick('/')">{{ 'HOME.HOME' | translate }}</a></li>
+  <li><a [routerLink]="'aboutus'" [ngClass]="{'active': selectedItem === '/aboutus'}" (click)="listClick('/aboutus')">{{ 'ABOUTUS.ABOUTUS' | translate }}</a></li>
+  <li><a [routerLink]="'contact'" [ngClass]="{'active': selectedItem == '/contact'}" (click)="listClick('/contact')">{{ 'CONTACT.CONTACT' | translate }}</a></li>
+  <li><a>{{ 'EVENTS.YEARLYEVENTS' | translate }}</a></li>
+  <div>
+    <input type="image" src="/assets/images/flag-eng.png" (click)="translate.use('en')" class="btn" />
+  
+    <input type="image" src="/assets/images/flag-hun.png" (click)="translate.use('hu')" class="btn" />
+  
+    <input type="image" src="/assets/images/flag-srb.png" (click)="translate.use('sr')" class="btn" />
+  </div>
+</ul>
