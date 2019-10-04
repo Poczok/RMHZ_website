@@ -6,10 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./contact.component.css']
 })
 export class ContactComponent implements OnInit {
+  texto = 'Régi Mesterségek Háza Zenta';
+  lat = 45.927564;
+  lng = 20.088132;
+  zoom = 16;
 
   constructor() { }
 
-  ngOnInit() {
-  }
-
+  ngOnInit() {}
 }

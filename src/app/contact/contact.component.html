@@ -3,3 +3,6 @@
       <p class="text-justify text-center">{{ 'CONTACT.TELEPHONE' | translate }}</p>
       <p class="text-justify text-center">info@regimestersekhaza.com</p>
 </div>
+<agm-map [latitude]="lat" [zoom]="zoom" [longitude]="lng">
+      <agm-marker  [latitude]="lat" [longitude]="lng"></agm-marker>
+    </agm-map>
