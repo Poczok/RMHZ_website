@@ -12,7 +12,6 @@ import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { AgmCoreModule } from '@agm/core';
-import { config } from 'config';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
@@ -38,7 +37,7 @@ export function HttpLoaderFactory(http: HttpClient) {
       }
   }),
   AgmCoreModule.forRoot({
-    apiKey: config.API_KEY
+    apiKey: 'AIzaSyCfH4NGyON6iJWMFeOjoLd_xQYv3HHtiCQ'
   })
   ],
   providers: [],
