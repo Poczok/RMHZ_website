@@ -1,4 +1,4 @@
-<ul id="nav" class="sidenav">
+<ul id="nav" class="sidenav animated bounceInLeft box">
   <li><a [routerLink]="''" [ngClass]="{'active': selectedItem == '/'}" (click)="listClick('/')">{{ 'HOME.HOME' | translate }}</a></li>
   <li><a [routerLink]="'aboutus'" [ngClass]="{'active': selectedItem === '/aboutus'}" (click)="listClick('/aboutus')">{{ 'ABOUTUS.ABOUTUS' | translate }}</a></li>
   <li><a [routerLink]="'contact'" [ngClass]="{'active': selectedItem == '/contact'}" (click)="listClick('/contact')">{{ 'CONTACT.CONTACT' | translate }}</a></li>
