@@ -3,6 +3,8 @@
   <li><a [routerLink]="'aboutus'" [ngClass]="{'active': selectedItem === '/aboutus'}" (click)="listClick('/aboutus')">{{ 'ABOUTUS.ABOUTUS' | translate }}</a></li>
   <li><a [routerLink]="'contact'" [ngClass]="{'active': selectedItem == '/contact'}" (click)="listClick('/contact')">{{ 'CONTACT.CONTACT' | translate }}</a></li>
   <li><a>{{ 'EVENTS.YEARLYEVENTS' | translate }}</a></li>
+  <li><a href="https://www.facebook.com/regimestersegekhaza"><i class="fa fa-facebook-official"></i> Facebook</a></li >
+    
   <div>
     <input type="image" src="/assets/images/flag-eng.png" (click)="translate.use('en')" class="btn" />
   
