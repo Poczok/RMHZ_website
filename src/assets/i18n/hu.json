@@ -17,5 +17,8 @@
     "EVENT1" : "Ismerkedés a régi mesterségekkel",
     "EVENT2" : "Kötélfonó napok a Régi Mesterségek Házában",
     "EVENT3" : "Tárlatvezetés és előadás a XIX.-XX. század közismert zentai mestereiről"
+  },
+  "APPOINTMENT": {
+    "APPOINTMENT" : "Időpont foglalás"
   }
 }

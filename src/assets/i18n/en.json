@@ -17,5 +17,8 @@
     "EVENT1" : "Learning about the old professions",
     "EVENT2" : "Rope-making days in the House of the Old Professions",
     "EVENT3" : "Exhibition and lecture about the well known professionals of Senta between XIX.-XX. centuary"
+  },
+  "APPOINTMENT": {
+    "APPOINTMENT" : "Make an appointment"
   }
 }

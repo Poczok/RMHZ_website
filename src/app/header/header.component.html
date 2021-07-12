@@ -2,6 +2,7 @@
   <li><a [routerLink]="''" [ngClass]="{'active': selectedItem == '/'}" (click)="listClick('/')">{{ 'HOME.HOME' | translate }}</a></li>
   <li><a [routerLink]="'aboutus'" [ngClass]="{'active': selectedItem === '/aboutus'}" (click)="listClick('/aboutus')">{{ 'ABOUTUS.ABOUTUS' | translate }}</a></li>
   <li><a [routerLink]="'contact'" [ngClass]="{'active': selectedItem == '/contact'}" (click)="listClick('/contact')">{{ 'CONTACT.CONTACT' | translate }}</a></li>
+  <li><a [routerLink]="'appointment'" [ngClass]="{'active': selectedItem == '/appointment'}" (click)="listClick('/appointment')">{{ 'APPOINTMENT.APPOINTMENT' | translate }}</a></li>
   <li><a>{{ 'EVENTS.YEARLYEVENTS' | translate }}</a></li>
   <li><a href="https://www.facebook.com/regimestersegekhaza"><i class="fa fa-facebook-official"></i> Facebook</a></li >
     

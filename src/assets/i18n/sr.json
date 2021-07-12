@@ -17,5 +17,8 @@
     "EVENT1" : "Upoznanje sa starim zanatima",
     "EVENT2" : "Dani pravljenje uže u Kući Starih Zanata",
     "EVENT3" : "Obliazak izložbe i predavanja o poznatim majstorima grada Sente između XIX.-XX. veka"
+  },
+  "APPOINTMENT": {
+    "APPOINTMENT" : "Zakazivanje termina"
   }
 }

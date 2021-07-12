@@ -12,6 +12,10 @@ import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { AgmCoreModule } from '@agm/core';
+import { AppointmentComponent } from './appointment/appointment.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatFormFieldModule, MatInputModule } from '@angular/material';
+import { ReactiveFormsModule } from '@angular/forms';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
@@ -23,7 +27,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     FooterComponent,
     HomeComponent,
     ContactComponent,
-    AboutUsComponent
+    AboutUsComponent,
+    AppointmentComponent
   ],
   imports: [
     BrowserModule,
@@ -38,7 +43,11 @@ export function HttpLoaderFactory(http: HttpClient) {
   }),
   AgmCoreModule.forRoot({
     apiKey: 'AIzaSyCfH4NGyON6iJWMFeOjoLd_xQYv3HHtiCQ'
-  })
+  }),
+  BrowserAnimationsModule,
+  MatFormFieldModule,
+  MatInputModule,
+  ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
